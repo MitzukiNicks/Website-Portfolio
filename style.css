@@ -1,0 +1,398 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    padding-top: 56px;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: #295F98; /* Set the header background color */
+    padding: 5px 10px;
+    justify-content: space-between;
+    color: white; /* Ensure the text is visible */
+}
+
+/* Container for logo and text */
+.logo-text-container {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between logo and text */
+}
+
+/* Logo styling */
+.logo {
+    width: 80px; /* Adjust size for logo */
+    height: 80px;
+    border-radius: 50%; /* Make the logo circular */
+}
+
+
+/* Text styling */
+.text {
+    font-size: 1rem; /* Font size for the text */
+    font-family: 'Arial', sans-serif; /* Change font family as per your preference */
+    font-weight: bold; /* Make the text bold */
+    color: white; /* White color for the text */
+}
+
+.black-text {
+    color: black; 
+}
+
+
+.white-text {
+    color: white; 
+}
+
+
+.navbar-nav a {
+    text-decoration: none;
+    color: white; /* Default color for the navbar links */
+    font-size: 1.1rem;
+    padding: 10px 15px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover Effect */
+.navbar-nav a:hover {
+    background-color: #666; /* Slight transparent background on hover */
+    color: white; /* Lighter color on hover */
+    border-radius: 5px; /* Slightly round the corners for hover background */
+}
+
+/* Hero Section */
+.hero-section {
+    height: 100vh;
+    background-image: url('hero.jpg');
+    background-size: cover;
+    background-position: center; 
+    color:black;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* Ellipse container styles */
+.ellipse-container {
+    width: 350px; /* Adjust the width as needed */
+    height: 350px; /* Adjust the height as needed */
+    background-color: transparent;
+    border-radius: 50% / 40%; /* This makes the ellipse shape */
+    box-shadow: 0 8px 20px rgba(0, 0, 255, 0.5); /* Blue blurred shadow */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Ensures the image doesn't overflow the ellipse */
+}
+
+/* Image inside ellipse */
+.ellipse-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50% / 40%; /* Matches the ellipse shape */
+}
+
+/* Hero Section */
+.hero-section h1 {
+    font-size: 5rem; /* Increased font size for the main heading */
+    margin-bottom: 0.5rem;
+    padding: 0px 80px;
+    font-weight: bold;
+}
+
+.hero-section h2 {
+    font-size: 3rem; /* Increased font size for the sub-heading */
+    padding: 0px 80px;
+}
+
+.hero-section .lead {
+    font-size: 1.75rem; /* Slightly increased font size for the lead text */
+    padding: 10px 80px;
+    line-height: 1.8;
+}
+
+.hero-section .btn-container {
+    display: flex;
+    gap: 20px; /* Space between buttons */
+    padding: 20px 80px; /* Adjust padding to align with text */
+    margin-top: 20px; /* Add some space between paragraph and buttons */
+}
+
+.hero-section .btn-primary,
+.hero-section .btn-secondary {
+    padding: 0.75rem 1.5rem;
+    font-size: 1.25rem;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+}
+
+.hero-section .btn-primary:hover,
+.hero-section .btn-secondary:hover {
+    transform: scale(1.05); /* Slight scaling effect on hover */
+}
+
+/* About Section */
+#about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+#about p {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.services-section {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.services-section h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 boxes in one row */
+    gap: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.service-box {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: left;
+}
+
+.service-box:hover {
+    background-color: #d9d9d9;
+    transform: translateY(-5px);
+}
+
+.service-box h3 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.service-box p {
+    font-size: 16px;
+    color: #666;
+}
+
+@media (max-width: 900px) {
+    .services-container {
+        grid-template-columns: 1fr; /* Stacks boxes vertically on smaller screens */
+    }
+}
+
+/* Projects Section */
+#projects h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card-img-top {
+    height: 300px;
+    object-fit: auto;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.skills-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for alignment */
+    gap: 20px;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.skill span {
+    font-size: 18px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.progress-bar {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    position: relative;
+    height: 15px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.bar {
+    height: 100%;
+    border-radius: 5px;
+    position: relative;
+    line-height: 15px;
+    color: white;
+    text-align: right;
+    padding-right: 5px;
+}
+
+.bar:after {
+    content: attr(data-progress);
+    position: absolute;
+    right: 10px;
+    top: -22px;
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Social Icons Container */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px; /* Space between the icons */
+    margin-top: 15px;
+}
+
+/* Image-based social media icons */
+.social-icon {
+    width: 40px;  /* Fixed size for each icon */
+    height: 40px;
+    border-radius: 50%; /* Circular icon */
+    object-fit: cover; /* Ensure the icon fits well inside the circle */
+    background-color: #f1f1f1; /* Light background color */
+    padding: 5px; /* Padding inside the circle */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icon:hover {
+    background-color: #007bff; /* Change background color on hover */
+    transform: scale(1.1); /* Slightly increase the size on hover */
+}
+
+/* Specific colors for different skills */
+.bar.html5 {
+    width: 90%;
+    background-color: orange;
+}
+
+.bar.css3 {
+    width: 85%;
+    background-color: #264de4;
+}
+
+.bar.javascript {
+    width: 80%;
+    background-color: #f7df1e;
+}
+
+.bar.figma {
+    width: 75%;
+    background-color: red;
+}
+
+.bar.uiux {
+    width: 70%;
+    background-color: violet;
+}
+
+.bar.python {
+    width: 80%;
+    background-color: #DCA47C;
+}
+
+.bar.database {
+    width: 70%;
+    background-color: green;
+}
+
+.bar.php {
+    width: 85%;
+    background-color: #4f5b93;
+}
+
+
+/* Contact Section - Contact Info Boxes */
+.contact-box {
+    background-color: #d9d9d9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+}
+
+.contact-box:hover {
+    background-color: #fff; /* Change background color on hover */
+    transform: scale(1.1); /* Slightly increase the size on hover */
+}
+
+/* Social Icons Container */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px; /* Space between the icons */
+    margin-top: 15px;
+}
+
+/* Image-based social media icons */
+.social-icon {
+    width: 40px;  /* Fixed size for each icon */
+    height: 40px;
+    border-radius: 50%; /* Circular icon */
+    object-fit: cover; /* Ensure the icon fits well inside the circle */
+    background-color: #f1f1f1; /* Light background color */
+    padding: 5px; /* Padding inside the circle */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icon:hover {
+    background-color: #007bff; /* Change background color on hover */
+    transform: scale(1.1); /* Slightly increase the size on hover */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-section .lead {
+        font-size: 1.2rem;
+    }
+}
